@@ -46,7 +46,8 @@ To run this project locally, follow these steps:
 ## links
 
 - repository : https://github.com/ANDRESGOM77/Wheather-App
-- Deploy: 
+- Deploy: https://andresgom77.github.io/Wheather-App/
+
 ## Contributions
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request. Please make sure to follow standard professional guidelines for commit messages and API documentation.
