@@ -7,9 +7,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: 600;
 }
 body{
-    background: url('./asses/6009667.jpg');
+    background: url('./asses/Background.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -26,6 +27,11 @@ body::before{
     background: rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
 }
+/* UTILITIES */
+.regular-txt{
+    font-weight: 400;
+}
+/* END UTILITIES */
 .main-container{
     width: 300px;
     height: 496px;
@@ -39,6 +45,7 @@ body::before{
 /* INPUT CONTAINER */
 .input-container{
     position: relative;
+    margin-bottom: 25px;
 }
 .city-input{
     width: 100%;
@@ -71,3 +78,84 @@ body::before{
     cursor:pointer;
 }
 /* END INPUT CONTAINER */
+
+/* WEATHER INFO */
+.weather-info{
+ display: flex;
+ flex-direction: column;
+ gap: 25px;
+}
+
+.location-date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weather-summary-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-summary-img{
+    width: 120px;
+    height: 120px;
+}
+.weather-summary-info{
+    text-align: end;
+}
+.weather-conditions-container{
+    display: flex;
+    justify-content: space-between;
+}
+.condition-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.condition-item span{
+    font-size: 30px;
+}
+
+.forecast-item-container{
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding-bottom: 12px;
+}
+.forecast-item-container::-webkit-scrollbar{
+    height: 8px;
+}
+.forecast-item-container::-webkit-scrollbar-track{
+    background:rgb(0, 0, 0,0.1);
+    border-radius: 99px;
+}
+.forecast-item-container::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0, 0.01);
+    border-radius: 99px;
+}
+.forecast-item{
+    min-width: 70px;
+    background: rgb(255, 255, 255, .1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+.forecast-item:hover{
+    background: rgb(255, 255, 255, 0.15);
+}
+.forecast-item-img{
+    width: 35px;
+    height: 35px;
+}
+/*  END WEATHER INFO */
