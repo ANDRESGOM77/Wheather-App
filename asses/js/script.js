@@ -85,7 +85,7 @@ async function updateWeatherInfo(city) {
     windValueTxt.textContent = speed + ' M/s'
 
     currentDateTxt.textContent = getCurrentDate()
-    weatherSummaryImg.src = `/asses/images/${getWeatherIcon(id)}`
+    weatherSummaryImg.src = `./asses/images/${getWeatherIcon(id)}`
 
     await updateForecastsInfo(city)
     showDisplaySection(weatherInfoSection)
